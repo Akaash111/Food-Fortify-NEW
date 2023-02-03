@@ -1,0 +1,102 @@
+html{
+  height: 100%;
+  width: 100%;
+  background-color: #d3e6f2;
+  background-image: "afqo1p9az6g71.jpg";
+}
+
+
+#numlabel {
+  display: block;
+  text-align: center
+}
+
+#inc {
+  margin: auto
+}
+
+#title {
+    border: 1px solid blue; /* sets the border width, style, and color */
+    border-radius: 10px; /* rounds the corners of the border */
+    padding: 10px; /* adds some space between the content and the border */
+  color: blue;
+}
+
+#header{
+  color: blue;
+}
+button {
+  background-color: white; /* sets the background color of the button */
+  color: blue; /* sets the text color of the button */
+  padding: 10px 20px; /* sets the padding of the button */
+  border: 1px solid blue; /* adds a border */
+  border-radius: 5px; /* rounds the corners of the button */
+  font-size: 16px; /* sets the font size of the text */
+  cursor: pointer; /* changes the cursor to a pointer when hovering over the button */
+  transition: all 0.1s ease-in; /* adds a transition effect when the background color and size changes */
+}
+
+/* styles for the button when it's hovered over */
+button:hover {
+  background-color: blue; /* changes the background color when hovered over */
+  color: white;
+  transform: scale(1.1); /* expands the button when hovered over */
+}
+
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdowncontent a:hover {background-color: #f1f1f1}
+
+.dropdowncontent button{
+  width:100%;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+  width: 100%;
+}
+
+table, th, td {
+  border:1px solid blue;
+}
+
+.navigate {
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+.dropdown {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.viewtables {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.eagleview {
+  display: block;
+  margin-top: 50px;
+}
+
+#map {
+  border: 1px solid black;
+}
+
