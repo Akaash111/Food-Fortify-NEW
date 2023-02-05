@@ -32,24 +32,25 @@ class Entity{
 
 }
 
-class DB{
-  constructor(){
-    this.ProducerDB = []
-    this.DistributorDB = []
-    this.RetailerDB = []
+class DB {
+  constructor() {
+    this.ProducerDB = [];
+    this.DistributorDB = [];
+    this.RetailerDB = [];
   }
 
-  AddEntity(newEntity){
-    if (newEntity.ID[0] == 'P'){
-      this.ProducerDB.push(newEntity)
-    }
-    else if (newEntity.ID[0] == "D"){
-      this.DistributorDB.push(newEntity)
-    }
-    else if (newEntity.ID[0] == "R"){
-      this.RetailerDB.push(ewEntity)
+  AddEntity(newEntity) {
+    const firstLetterOfID = newEntity.ID[0];
+
+    if (firstLetterOfID === "P") {
+      this.ProducerDB.push(newEntity);
+    } else if (firstLetterOfID === "D") {
+      this.DistributorDB.push(newEntity);
+    } else if (firstLetterOfID === "R") {
+      this.RetailerDB.push(newEntity);
     }
   }
+
 
   ViewProducerDB(){
     let producers = []
@@ -113,6 +114,7 @@ class DB{
     this.RetailerDB = []
   }
 }
+
 
 const mainDB = new DB()
 const newEnt = new Entity("FarmLand", "P10102", "SG", "-")

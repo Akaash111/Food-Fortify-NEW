@@ -39,27 +39,35 @@ window.onload = function() {
 
 //CREATE NEW ENT and add it to DB
 document.addEventListener('DOMContentLoaded', ()=>{
-  const f_CreateNewEntity = document.querySelector("#submitEntityInfo")
+  const f_CreateNewEntity = document.querySelector("#submitEntityInfo");
   function fCreateNewEntity(){
-    let Name = document.querySelector("#createName").value
-    let ID = document.querySelector("#createID").value
-    let Location = document.querySelector("#createLocation").value
-    let Phone = document.querySelector("#createPhone").value
-    let Email = document.querySelector("#createEmail").value
+    let Name = document.querySelector("#createName").value;
+    let ID = document.querySelector("#createID").value;
+    let Location = document.querySelector("#createLocation").value;
+    let Phone = document.querySelector("#createPhone").value;
+    let Email = document.querySelector("#createEmail").value;
 
-    //Contact: tuple
-    let Contact = [Phone, Email]
+    // Contact: tuple
+    let Contact = [Phone, Email];
 
-    //Creating new entity
-    let NewEntity = new Entity(Name, ID, Location, Contact)
-    //ADD TO DATABASE
-    MainDB.AddEntity(NewEntity)
-    //UPDATE STATUS
-    document.querySelector("#statusCreate").innerHTML = "Successfully Created. "
+    // Creating new entity
+    let NewEntity = new Entity(Name, ID, Location, Contact);
+
+    // Add to the appropriate database
+    if (ID[0] === 'P') {
+      MainDB.ProducerDB.push(NewEntity);
+    } else if (ID[0] === 'R') {
+      MainDB.RetailerDB.push(NewEntity);
+    } else if (ID[0] === 'D') {
+      MainDB.DistributorDB.push(NewEntity);
+    }
+
+    // Update status
+    document.querySelector("#statusCreate").innerHTML = "Successfully Created. ";
   }
-  f_CreateNewEntity.addEventListener("click", fCreateNewEntity)
+  f_CreateNewEntity.addEventListener("click", fCreateNewEntity);
+});
 
-})
 
 //FLUSH ALL ENTITIES
 

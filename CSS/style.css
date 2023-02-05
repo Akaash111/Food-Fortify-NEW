@@ -100,3 +100,9 @@ table, th, td {
   border: 1px solid black;
 }
 
+div.overview{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+

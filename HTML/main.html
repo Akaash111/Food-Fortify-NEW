@@ -43,11 +43,23 @@
   </div>
 
 
+  <div class="overview">
+    <button type="button", id="overview">Overview</button>
+
+  </div>
+
   <div class="eagleview">
-    <button type="button", id="eagleviewbtn">Eagle View</button>
+
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <div id ="map" style = "width: 500px; height: 580px;border: 10px solid black;"></div>
+
+  </div>
   
-<script type="module" src="/JS/main.js"></script>
-<script type="module" src="/JS/backend.js"></script>
+<script type="module" src="/JS/front-JS/main.js"></script>
+<script type="module" src="/JS/backend-JS/entity&DB.js"></script>
+<script type="module" src="/JS/front-JS/overview.js" > </script>
 
 </body>
 </html> 

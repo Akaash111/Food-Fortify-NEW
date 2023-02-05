@@ -22,5 +22,8 @@ window.onload = function dataToTable(data) {
     }
 
   }
+
+
+console.log(MainDB.ViewProducerDB())
   
 
