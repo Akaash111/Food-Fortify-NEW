@@ -8,10 +8,13 @@
 <body>
 
   <h1 id="title">FoodFortify</h1>
-  <h2 id="header">Welcome, Select a Function. </h2> <br>
+  <h2 id="header"> Welcome, Select a Function. </h2> <br>
+
+  <h2 id="overviewtitle">Overview</h2>
 
   <div class="dropdown">
   <button type="button" id="entitybtn">Entity Management</button>
+
     
   <div class="dropdowncontent">
     <button type="button" id="optionA1">Create New Entity</button>
@@ -42,18 +45,23 @@
     <button type="button" id="optionA4">View Existing Stocks</button>
   </div>
 
+  <div id="globecont">
+  <img id="globeimg" src="/ASSETS/3d-earth-planet-illustration-free-png.webp">
+  <p>View Supply Chain Forecast</p>
+  </div>
+
 
   <div class="overview">
     <button type="button", id="overview">Overview</button>
 
   </div>
 
-  <div class="eagleview">
+  <div class="overview">
 
     <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
     <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
-    <div id ="map" style = "width: 500px; height: 580px;border: 10px solid black;"></div>
+    <div id ="map" style = "float: right; width: 850px; height: 400px;border: 10px solid black;"></div>
 
   </div>
   

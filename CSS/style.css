@@ -1,46 +1,82 @@
 html{
   height: 100%;
   width: 100%;
-  background-color: #d3e6f2;
+  background-color: black;
   background-image: "afqo1p9az6g71.jpg";
 }
 
 
 #numlabel {
   display: block;
-  text-align: center
+  text-align: center;
+  color: #33cc33;
+  padding: 1px;
+  border-radius: 10px;
 }
 
 #inc {
-  margin: auto
+  margin: auto;
 }
 
 #title {
-    border: 1px solid blue; /* sets the border width, style, and color */
-    border-radius: 10px; /* rounds the corners of the border */
-    padding: 10px; /* adds some space between the content and the border */
-  color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    color: #33cc33;
+    background-color:#33cc33;
+    margin-bottom: 30px;
 }
 
 #header{
-  color: blue;
-}
-button {
-  background-color: white; /* sets the background color of the button */
-  color: blue; /* sets the text color of the button */
-  padding: 10px 20px; /* sets the padding of the button */
-  border: 1px solid blue; /* adds a border */
-  border-radius: 5px; /* rounds the corners of the button */
-  font-size: 16px; /* sets the font size of the text */
-  cursor: pointer; /* changes the cursor to a pointer when hovering over the button */
-  transition: all 0.1s ease-in; /* adds a transition effect when the background color and size changes */
+  color: #33cc33;
+  margin-bottom: 20px;
 }
 
-/* styles for the button when it's hovered over */
-button:hover {
-  background-color: blue; /* changes the background color when hovered over */
+#globeimg {
+  width: 25%;
+  height: 45%;
+  position: absolute;
+  left: 65px;
+  bottom: 70px;
+}
+
+
+#overviewtitle{
+  position: fixed;
+  top:15px;
+  right: 0;
+  width: 300px;
+  color:azure;
+}
+
+#optionA4{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#entitybtn{
+  margin-bottom: 20px;
+  margin-left:20px
+}
+
+#stockbtn{
+  margin-left:25px;
+}
+
+
+button {
+  background-color: #33cc33;
   color: white;
-  transform: scale(1.1); /* expands the button when hovered over */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+button:hover {
+  background-color: rgb(9, 114, 33);
+  color:#33cc33;
+  transform: scale(1.1);
 }
 
 
@@ -52,7 +88,7 @@ button:hover {
 .dropdowncontent {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #33cc33;
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -71,7 +107,7 @@ button:hover {
 }
 
 table, th, td {
-  border:1px solid blue;
+  border:1px solid orange;
 }
 
 .navigate {
@@ -91,18 +127,29 @@ table, th, td {
   vertical-align: top;
 }
 
-.eagleview {
+#map {
+  border: 5px solid #33cc33;
+}
+
+div.overview{
+  border: 5px solid #33cc33;
+  position: absolute;
+  right: 10px;
+  top: 100px;
   display: block;
   margin-top: 50px;
 }
 
-#map {
-  border: 1px solid black;
+#createnewentitydiv{
+  color:white;
+  margin-left: 30px;
 }
 
-div.overview{
-  position: absolute;
-  right: 10px;
-  top: 20px;
+#update{
+  color:white;
+}
+
+#removeentitydiv{
+  color:white;
 }
 

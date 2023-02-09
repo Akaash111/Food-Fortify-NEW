@@ -11,4 +11,8 @@ var layer = new L.TileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.pn
 // Adding layer to the map
 map.addLayer(layer);
 
+let sfo_marker = L.marker([0.31430, 103.79117]).addTo(map);
+let oak_marker = L.marker([37.710, -122.224]).addTo(map);
+let sjc_marker = L.marker([37.361, -121.928]).addTo(map);
+
 
