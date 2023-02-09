@@ -12,17 +12,35 @@ Header.style.backgroundColor = "#637e7e"
 window.onload = function() {
   const rd_CreateNewEntity = document.querySelector("#optionA1")
   function rdCreateNewEntity(){
-    window.location.href = "/HTML/create_new_entity_menu.html"
+    window.location.href = "/HTML/ENT/create_new_entity_menu.html"
   }
   if (rd_CreateNewEntity != null)
     rd_CreateNewEntity.addEventListener("click", rdCreateNewEntity)
 
+  const rd_UpdateEntities = document.querySelector("#optionA2")
+  function rdUpdateEntities(){
+    window.location.href = "/HTML/ENT/update_existing_entity.html"
+  }
+  rd_UpdateEntities.addEventListener("click", rdUpdateEntities)
+
+  const rd_RemoveEntities = document.querySelector("#optionA3")
+  function rdRemoveEntities(){
+    window.location.href = "/HTML/ENT/remove_existing_entity.html"
+  }
+  rd_RemoveEntities.addEventListener("click", rdRemoveEntities)
 
   const rd_ViewEntities = document.querySelector("#optionA4")
   function rdViewEntities(){
-    window.location.href = "/HTML/view_existing_entities.html"
+    window.location.href = "/HTML/ENT/view_existing_entities.html"
   }
   rd_ViewEntities.addEventListener("click", rdViewEntities)
+
+
+  const rd_CreateStocks = document.querySelector("#optionB1")
+  function rdCreateStocks(){
+    window.location.href = "/HTML/STOCK/create_new_stock.html"
+  }
+  rd_CreateStocks.addEventListener("click", rdCreateStocks)
 
 
   const f_flushAllRecords = document.querySelector("#optionA5")

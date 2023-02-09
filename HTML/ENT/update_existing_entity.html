@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+  <h1 id="title">FoodFortify</h1>
+  <h2 id="header">Update an Entity</h2> <br>
+
+  <body>
+    <div class="navigate">
+      <div class="dropdown">
+        <button type="button" id="entitybtn">Navigate</button>
+        <div class="dropdowncontent">
+          <button type="button" id="optionM1">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+  
+    <div id="updateentitydiv">
+        <label>ID: </label>
+        <input type='text' id="updateID">
+        <br>
+
+        <label>New Name: </label>
+        <input type='text' id="updateName">
+        <br>
+
+        <label>New Location: </label>
+        <input type='text' id="updateLocation">
+        <br>
+
+        <label>New Contact: </label>
+        <input type='text' id="updateContact">
+        <br>
+
+        <label>New Inventory Size: </label>
+        <input type='text' id="updateInventory">
+        <br>
+        <br>
+
+        <button type="button" id="submitUpdateEntity">Submit</button>
+
+    </div>
+
+
+    <p id="statusUpdate"></p>
+    
+    
+    <script type="module" src="/JS/front-JS/main.js"></script>
+    <script type="module" src="/JS/backend-JS/entity&DB.js"></script>
+
+</body>
+</html>

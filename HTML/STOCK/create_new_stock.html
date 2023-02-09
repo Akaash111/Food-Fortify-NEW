@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+  <h1 id="title">FoodFortify</h1>
+  <h2 id="header">Create a New Stock</h2> <br>
+
+  <body>
+    <div class="navigate">
+      <div class="dropdown">
+        <button type="button" id="entitybtn" style="color: white;">Navigate</button>
+        <div class="dropdowncontent">
+          <button type="button" id="optionM1" style="color: white;">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+  
+    <div id="createnewstockdiv" style="text-align: left;">
+        <label style="color: white;">Name: </label>
+        <input type='text' id="createName">
+        <br>
+
+        <label style="color: white;">ID: </label>
+        <input type='text' id="createID">
+        <br>
+
+        <label style="color: white;">Location: </label>
+        <input type='text' id="createLocation">
+        <br>
+
+        <label style="color: white;">To: </label>
+        <input type='text' id="createTo">
+        <br>
+
+        <label style="color: white;">From: </label>
+        <input type='text' id="createFrom">
+        <br>
+
+        <label style="color: white;">Created: </label>
+        <input type='text' id="createCreated">
+        <br>
+
+        <label style="color: white;">Expiry: </label>
+        <input type='text' id="createExpiry">
+        <br>
+        <br>
+
+        <button type="button" id="submitStockInfo" style="color: white;">Submit</button>
+
+    </div>
+
+
+    <p id="statusCreate" style="color: white;"></p>
+    
+    
+    <script type="module" src="/JS/front-JS/main.js"></script>
+    <script type="module" src="/JS/backend-JS/stock&DB.js"></script>
+
+</body>
+</html>

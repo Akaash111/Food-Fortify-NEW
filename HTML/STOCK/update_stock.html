@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+  <h1 id="title">FoodFortify</h1>
+  <h2 id="header">Update Stock</h2> <br>
+
+  <body>
+    <div class="navigate">
+      <div class="dropdown">
+        <button type="button" id="updateStockbtn" style="color: white;">Navigate</button>
+        <div class="dropdowncontent">
+          <button type="button" id="optionM1" style="color: white;">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+  
+    <div id="updateexistingstockdiv" style="color: white; text-align: left;">
+        <label style="display: inline-block; width: 80px;">ID: </label>
+        <input type='text' id="updateStockID" style="color: white;">
+        <br>
+
+        <label style="display: inline-block; width: 80px;">New Name: </label>
+        <input type='text' id="updateStockName" style="color: white;">
+        <br>
+
+        <label style="display: inline-block; width: 80px;">New Location: </label>
+        <input type='text' id="updateStockLocation" style="color: white;">
+        <br>
+
+        <label style="display: inline-block; width: 80px;">New From: </label>
+        <input type='text' id="updateStockFrom" style="color: white;">
+        <br>
+
+        <label style="display: inline-block; width: 80px;">New To: </label>
+        <input type='text' id="updateStockTo" style="color: white;">
+        <br>
+
+        <label style="display: inline-block; width: 80px;">New Created: </label>
+        <input type='text' id="updateStockCreated" style="color: white;">
+        <br>
+
+        <label style="display: inline-block; width: 80px;">New Expiry: </label>
+        <input type='text' id="updateStockExpiry" style="color: white;">
+        <br>
+        <br>
+
+        <button type="button" id="submitUpdateStockInfo" style="color: white;">Submit</button>
+
+    </div>
+
+
+    <p id="statusStockUpdate" style="color: white;"></p>
+    
+    
+    <script type="module" src="/JS/front-JS/main.js"></script>
+    <script type="module" src="/JS/backend-JS/stock&DB.js"></script>
+
+</body>
+</html> 
