@@ -3,13 +3,14 @@ from tensorflow import keras
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 from data_preprocess import Msia_cal_per_day as a1
 
-#ModelA1= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A1")
+ModelA1= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A1")
 ModelA2= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A2")
 ModelA3= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A3")
-#ModelA4= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A4")
-#ModelA5= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A5")
+ModelA4= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A4")
+ModelA5= keras.models.load_model("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved Model/A5")
 
 
 #TESTING
