@@ -28,7 +28,7 @@ y = np.column_stack((a1, a2, a3, a4, a5, a6))
 
 #year series
 x = []
-for i in range(1961, 2018):
+for i in range(2018, 2075):
     x.append(i)
 
 x = np.array(x)
@@ -53,7 +53,4 @@ optim = Adam(lr=1e-3, decay=1e-5)
 Model.compile(optimizer=optim, loss="mean_squared_error", metrics=["mean_squared_error"])
 Model.fit(x, y, batch_size=10, epochs=30)
 
-
-prediction = Model.predict(np.array([2023 / 2000]).reshape(1, 1))
-
-print(prediction)
+Model.save("/Users/akaash/Desktop/Projects/FF/Supply Chain Pred Model/Saved/A1")
